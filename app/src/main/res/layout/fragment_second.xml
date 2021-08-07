@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/java01"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/alike_angular"
+        android:gravity="center"
+        android:text="1. Java was Introduced in 1984 ?"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:fontFamily="@font/alike_angular"
+        android:text="@string/previous"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginRight="155dp"
+        android:fontFamily="@font/alike_angular"
+        android:text="True"
+        android:textColor="#000000"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#D1C7C7"
+        app:layout_constraintBottom_toBottomOf="@+id/no"
+        app:layout_constraintEnd_toStartOf="@+id/no"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/no"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="@font/alike_angular"
+        android:text="False"
+        android:textColor="#040303"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#D1C7C7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
